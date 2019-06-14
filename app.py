@@ -1,5 +1,5 @@
 #  python_aviation_project
-# This is some code that I am putting together while learning python. 
+# This is some code that I am putting together while learning python.
 
 pilot = int(input("Enter Pilot weight: "))
 co_pilot = int(input("Enter Copilot weight: "))
@@ -20,6 +20,6 @@ elif pay_load <= max_payload:
     print("Have a safe flight and squawk VFR!")
 else:
     print("You're OVER weight by " + str(pay_load - max_payload) + " pounds.")
-    print("You will need to take " + str((pay_load - max_payload) / 6) + " less gallons of fuel.")
+    print("You will need to carry " + str((pay_load - max_payload) / 6) + " less gallons of fuel.")
 
 

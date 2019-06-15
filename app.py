@@ -6,8 +6,15 @@
 plane_models = ["C172", "PA28R", "C150"]
 plane_payloads = [650, 900, 500]
 
+
 print("Plane models: " + str(plane_models))
-# plane = input("Enter plane Model: ")
+plane = input("Enter plane Model: ")
+if plane not in plane_models:
+    print("The plane was not listed!")
+    new_plane = plane
+    plane_payloads.append(input("What is the payload of this plane: "))
+    plane_models.append(new_plane)
+    print(plane_models)
 
 pilot = int(input("Enter Pilot weight: "))
 co_pilot = int(input("Enter Copilot weight: "))
